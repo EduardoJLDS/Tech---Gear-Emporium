@@ -1,0 +1,58 @@
+:root {
+    /* Primary Colors */
+    --primary-color: #007bff;
+    /* Blue */
+    --secondary-color: #28a745;
+    /* Green */
+
+    /* Neutral Colors */
+    --white-color: #ffffff;
+    /* White */
+    --black-color: #000000;
+    /* Black */
+    --gray-color: #6c757d;
+    /* Gray */
+
+    /* Accent Colors */
+    --accent-color1: #ff5c5c;
+    /* Red */
+    --accent-color2: #ffc107;
+    /* Yellow */
+
+    /* Background and Text Colors */
+    --primary-background-color: #f8f9fa;
+    --boder-color: 0.5px solid gray;
+    /* Light Gray */
+    --text-color: #343a40;
+    /* Dark Gray */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+
+    &.scroll-disabled {
+        overflow: hidden;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

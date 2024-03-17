@@ -1,0 +1,22 @@
+.select {
+    padding: 8px 25px;
+    border: 1px solid white;
+    border-radius: 100px;
+    font-size: 14px;
+    background-color: --primary-background-color;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('../../assets/iconSortDown.png');
+    background-size: 0.8em auto;
+    background-position: left 8px top 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+
+    &:focus {
+        background-image: url('../../assets/iconSortUp.png');
+        background-size: 0.8em auto;
+        background-position: left 8px top 50%;
+        background-repeat: no-repeat;
+    }
+}

@@ -1,0 +1,21 @@
+.headerContainer {
+    background-color: var(--primary-background-color);
+    color: var(--text-color);
+    max-height: 100px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+
+    svg {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.logo-title-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

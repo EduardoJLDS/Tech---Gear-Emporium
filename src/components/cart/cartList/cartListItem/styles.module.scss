@@ -1,0 +1,116 @@
+.cart-items {
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+    padding: 2px;
+    gap: 15px;
+    align-items: center;
+
+    .cart-item-img {
+        width: 80px;
+        object-fit: contain;
+    }
+
+    .cart-item-info {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .cart-item-name {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+        top: 10px;
+    }
+
+    .cart-item-trash {
+        position: relative;
+        left: 250px;
+        bottom: 3px;
+        cursor: pointer;
+
+        svg {
+            width: 22px;
+            height: 22px;
+        }
+    }
+
+    .cart-item-info-buy {
+        display: flex;
+        align-items: center;
+        width: 230px;
+        justify-content: space-between;
+
+        .cart-item-price {
+            font-size: 12px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+    }
+
+    .plus-minus-button {
+        display: flex;
+        align-items: center;
+        width: 100px;
+        cursor: pointer;
+        position: relative;
+        left: 10px;
+
+        .button-minus {
+            background: none;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            border-right: var(--boder-color);
+            border-bottom: var(--boder-color);
+            border-left: var(--boder-color);
+            border-top: var(--boder-color);
+            border-right: none;
+            font-size: large;
+            position: relative;
+            cursor: pointer;
+            height: 30px;
+        }
+
+        .quantity-per-productInCart {
+            border-top: var(--boder-color);
+            border-bottom: var(--boder-color);
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 3px;
+            padding-top: 2px;
+            font-weight: bold;
+            margin: 0;
+            padding: 9px 10px;
+            line-height: 10px;
+        }
+
+        .button-plus {
+            background: none;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+            border-left: var(--boder-color);
+            border-bottom: var(--boder-color);
+            border-right: var(--boder-color);
+            border-top: var(--boder-color);
+            border-left: none;
+            font-size: large;
+            cursor: pointer;
+            height: 30px;
+        }
+
+    }
+
+    .cart-item-total-item {
+        font-size: 15px;
+        font-weight: bold;
+        font-family: sans-serif;
+        padding-left: 0;
+        position: relative;
+        left: 50px;
+    }
+
+
+}

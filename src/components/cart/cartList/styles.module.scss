@@ -1,0 +1,25 @@
+.cart-close-icon-container {
+    display: flex;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
+
+    .title-cart-menu {
+        font-size: 40px;
+        position: relative;
+        left: 150px;
+    }
+
+    .cart-close-icon {
+        background: none;
+        padding: 20px;
+        margin-left: auto;
+        cursor: pointer;
+        border: none;
+
+        svg {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+}

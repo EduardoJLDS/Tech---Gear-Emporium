@@ -1,0 +1,49 @@
+.icon-car-shop {
+    padding-right: 20px;
+    width: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    cursor: pointer;
+    object-fit: contain;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    svg {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+.cart-info-content {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    overflow-y: auto;
+    max-height: 100vh;
+    min-height: 100vh;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: auto;
+    width: 400px;
+    background-color: #ffffff;
+    transition: 0.3s all;
+    z-index: 9;
+}
+
+.display-cart-info-none {
+    right: -450px;
+}
+
+.blackdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 4;
+}

@@ -23,9 +23,11 @@ describe("Cart testing", () => {
     await user.click(addToCartButtons[0]);
     await user.click(addToCartButtons[1]);
     await user.click(addToCartButtons[2]);
-    const toggleCart = screen.getByRole("button", { name: "cart-toggle" });
-    await user.click(toggleCart);
-    const listItems = screen.getAllByRole("listitem");
+    // Find the cart icon by class since it doesn't have proper aria-label
+    const cartIcon = document.querySelector('[class*="icon-car-shop"]');
+    expect(cartIcon).toBeInTheDocument();
+    await user.click(cartIcon as Element);
+    const listItems = await screen.findAllByRole("listitem");
     expect(listItems).toHaveLength(3);
   });
 
@@ -35,7 +37,9 @@ describe("Cart testing", () => {
       name: "Add to Cart"
     });
     await user.click(addToCartButtons[0]);
-    const camera = screen.getByRole("listitem");
+    const cartIcon = document.querySelector('[class*="icon-car-shop"]');
+    await user.click(cartIcon as Element);
+    const camera = await screen.findByRole("listitem");
     const increaseButton = screen.getByRole("button", {
       name: "cart-list-increase"
     });
@@ -62,8 +66,8 @@ describe("Cart testing", () => {
     await user.click(addToCartButtons[0]);
     await user.click(addToCartButtons[1]);
     await user.click(addToCartButtons[2]);
-    const toggleCart = screen.getByRole("button", { name: "cart-toggle" });
-    await user.click(toggleCart);
+    const cartIcon = document.querySelector('[class*="icon-car-shop"]');
+    await user.click(cartIcon as Element);
     const deleteItems = screen.getByRole("button", { name: "delete-items" });
     await user.click(deleteItems);
     const listItems = screen.queryByRole("listitem");

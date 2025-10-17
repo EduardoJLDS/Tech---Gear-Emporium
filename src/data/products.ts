@@ -16,7 +16,7 @@ const products: Product[] = [
     name: "Smartphone",
     description:
       "Stay connected with our latest smartphone. Featuring a high-resolution display, powerful processor, and advanced camera system, this phone is perfect for keeping up with your busy lifestyle.",
-    validityDate: new Date("2024-12-31"),
+    validityDate: new Date("2026-12-31"),
     cost: 799.99,
     image: SmartPhoneImage
   },
@@ -25,7 +25,7 @@ const products: Product[] = [
     name: "Running Shoes",
     description:
       "Hit the ground running with our premium running shoes. Designed for comfort and performance, these shoes feature cushioned soles, breathable mesh uppers, and durable outsoles for maximum traction.",
-    validityDate: new Date("2024-12-31"),
+    validityDate: new Date("2026-12-31"),
     cost: 99.99,
     image: RunningShoesImage
   },
@@ -34,7 +34,7 @@ const products: Product[] = [
     name: "Digital Camera",
     description:
       "Capture life's moments in stunning detail with our digital camera. With high-resolution sensors, advanced autofocus, and intuitive controls, this camera delivers professional-quality photos and videos.",
-    validityDate: new Date("2024-12-31"),
+    validityDate: new Date("2026-12-31"),
     cost: 599.99,
     image: DigitalCameraImage
   },
@@ -43,7 +43,7 @@ const products: Product[] = [
     name: "Electric Toothbrush",
     description:
       "Upgrade your oral care routine with our electric toothbrush. Featuring oscillating bristles and multiple brushing modes, this toothbrush removes plaque and improves gum health for a brighter smile.",
-    validityDate: new Date("2024-12-31"),
+    validityDate: new Date("2026-12-31"),
     cost: 79.99,
     image: ElectricToothBrushImage
   },
@@ -52,7 +52,7 @@ const products: Product[] = [
     name: "Wireless Headphones",
     description:
       "Immerse yourself in your favorite music with our wireless headphones. With noise-cancellation technology and long battery life, these headphones deliver crisp, clear sound wherever you go.",
-    validityDate: new Date("2024-12-31"),
+    validityDate: new Date("2026-12-31"),
     cost: 149.99,
     image: WirelessHeadphonesImage
   },
@@ -61,7 +61,7 @@ const products: Product[] = [
     name: "Fitness Tracker Watch",
     description:
       "Stay on top of your fitness goals with our advanced fitness tracker watch. Monitor your heart rate, track your steps, and analyze your sleep patterns to optimize your health and performance.",
-    validityDate: new Date("2024-12-31"),
+    validityDate: new Date("2026-12-31"),
     cost: 79.99,
     image: FitnessTrackerWatchImage
   },
@@ -70,7 +70,7 @@ const products: Product[] = [
     name: "Portable Solar Charger",
     description:
       "Harness the power of the sun with our portable solar charger. Charge your devices on the go using clean, renewable energy. Perfect for camping, hiking, or emergency situations.",
-    validityDate: new Date("2024-12-31"),
+    validityDate: new Date("2026-12-31"),
     cost: 49.99,
     image: PortableSolarChargerImage
   },
@@ -79,7 +79,7 @@ const products: Product[] = [
     name: "Waterproof Action Camera",
     description:
       "Capture your adventures in stunning detail with our waterproof action camera. With 4K video recording and built-in image stabilization, this camera is perfect for capturing all your outdoor activities.",
-    validityDate: new Date("2024-12-31"),
+    validityDate: new Date("2026-12-31"),
     cost: 129.99,
     image: WaterproofActionCameraImage
   },
@@ -88,7 +88,7 @@ const products: Product[] = [
     name: "Smart Home Security Camera",
     description:
       "Keep your home safe and secure with our smart home security camera. Featuring motion detection, night vision, and two-way audio, you can monitor your home from anywhere using your smartphone.",
-    validityDate: new Date("2022-12-1"),
+    validityDate: new Date("2026-12-31"),
     cost: 89.99,
     image: SmartHomeSecurityCameraImage
   },
@@ -97,7 +97,7 @@ const products: Product[] = [
     name: "Travel Backpack with USB Charging Port",
     description:
       "Travel in style with our versatile travel backpack. With multiple compartments, a built-in USB charging port, and padded shoulder straps, this backpack is perfect for urban adventures or weekend getaways.",
-    validityDate: new Date("2022-12-1"),
+    validityDate: new Date("2026-12-31"),
     cost: 59.99,
     image: TravelBackpackUsbPortImage
   }

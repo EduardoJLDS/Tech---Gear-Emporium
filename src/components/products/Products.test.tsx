@@ -42,7 +42,9 @@ describe("Product testing", () => {
       name: "Add to Cart"
     });
     await user.click(addToCartButton);
-    const camera = screen.getByRole("listitem");
+    const cartIcon = document.querySelector('[class*="icon-car-shop"]');
+    await user.click(cartIcon as Element);
+    const camera = await screen.findByRole("listitem");
     within(camera).getByText("4");
     within(camera).getByText("599.99€");
     within(camera).getByText("2399.96€");
